@@ -1,1 +1,1 @@
-user=
+user=%7B%22id%22%3A1602902444%2C%22first_name%22%3A%22sarudkecil%20%24PINK%22%2C%22last_name%22%3A%22%22%2C%22username%22%3A%22Sarudkecil03%22%2C%22language_code%22%3A%22en%22%2C%22allows_write_to_pm%22%3Atrue%7D&chat_instance=4444261505196088553&chat_type=private&start_param=c2a384679d515c8175046ccd2fd205cd&auth_date=1724300833&hash=f93cc084c24509f8c87b2cd25e05a97a21b1e266ffd46b538d85e321e5fdbcaa
