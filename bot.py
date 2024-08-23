@@ -23,6 +23,15 @@ script_dir = os.path.dirname(os.path.realpath(__file__))
 data_file = os.path.join(script_dir, "data.txt")
 config_file = os.path.join(script_dir, "config.json")
 
+def hitung_mundur(detik):
+    while detik:
+        mins, secs = divmod(detik, 60)
+        timer = '{:02d}:{:02d}'.format(mins, secs)
+        print(timer, end="\r")
+        time.sleep(1)
+        detik -= 1
+    
+    print("Waktu telah habis!") 
 
 class MatchQuest:
     def __init__(self):
@@ -344,7 +353,9 @@ class MatchQuest:
 
             wait_message = ", ".join(wait_message_parts)
             self.log(f"{yellow}Wait for {wait_message}!")
-            time.sleep(wait_time)
+            detik = wait_time
+            hitung_mundur(detik)
+            #time.sleep(wait_time)
 
 
 if __name__ == "__main__":
